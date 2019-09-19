@@ -39,6 +39,10 @@
 			    }
 			}
 
+			function setJSONValues(json) {
+				document.getElementById("jsonData").value = json
+			}
+
 			function changeBackgroundColor(colorText) {
 				document.body.style.background = colorText;
 			}
@@ -59,7 +63,8 @@
         	<tr><td/><td><input type="submit" value="Geocode Address" onclick="geocodeAddress();"></td></tr>
         	<tr/>
         	<tr><td>Latitude</td><td><input id="latitude" type="text" width="50" /></td></tr>
-        	<tr><td>Longitude</td><td><input id="longitude" type="text" width="50" /></td></tr>
+			<tr><td>Longitude</td><td><input id="longitude" type="text" width="50" /></td></tr>
+			<tr><td>Address</td><td><textarea id="jsonData" type="text" width="80"/></td></tr>
         </table>
     </body>
 </html>
